@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>8 Rainhas</title>
+
+
+
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+        }
+
+        #tabuleiro {
+            background-color: aliceblue;
+            border: 1px solid #ddd;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin: 0px auto;
+        }
+
+        canvas {
+            width: 120px;
+            border: 1px solid #aaa;
+            margin: 5px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px;
+            background-color: #eee;
+            padding: 15px;
+        }
+
+        .bg-light {
+            background-color: #eef;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="queen-img" src="queen.png" alt="" width="60" style="display: none;">
+
+
+    <div class="row">
+        <h1>8 Queens</h1>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <h2>Algoritmo Genérico</h2>
+                Geração Atual: <b>12</b><br>
+                Melhor Pontuação: <b>12</b><br>
+                Média: <b>12</b><br><br>
+                Mutação:
+                Crossover:
+                <br>
+                <center>
+                    <img src="board.png" alt="" width="150">
+                    <pre>[DNA] Pontuation</pre>
+                </center>
+
+                <label for="txtGeneration">Gerações</label>
+                <input id="txtGeneration" type="number">
+                <button>Pause</button>
+                <button>Play</button>
+
+
+
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-light">
+                <div class="row">
+                    1ª Geração
+                </div>
+
+                <canvas id="tabuleiro1" width="250" height="250"></canvas>
+                <canvas id="tabuleiro2" width="250" height="250"></canvas>
+                <canvas id="tabuleiro3" width="250" height="250"></canvas>
+                <canvas id="tabuleiro4" width="250" height="250"></canvas>
+                <canvas id="tabuleiro5" width="250" height="250"></canvas>
+                <canvas id="tabuleiro6" width="250" height="250"></canvas>
+                <canvas id="tabuleiro7" width="250" height="250"></canvas>
+                <canvas id="tabuleiro8" width="250" height="250"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+
+
+<script src="genetic_factory.js"></script>
+
+<script>
+    window.onload = function() {
+
+        run()
+
+    }
+</script></html>
